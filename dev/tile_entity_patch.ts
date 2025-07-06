@@ -26,10 +26,10 @@ declare class IBlockEntityManager {
     public getBlockEntity(x: number, y: number, z: number, dimension: number): IBlockEntity;
 }
 
-let JsTickBlockEntity: typeof IJsTickBlockEntity = WRAP_JAVA("ru.koshakmine.icstd.block.blockentity.ticking.JsTickBlockEntity");
-let System: ITickingSystemBlockEntity = WRAP_JAVA("ru.koshakmine.icstd.block.blockentity.ticking.JsTickingSystemBlockEntity")
+let JsTickBlockEntity: typeof IJsTickBlockEntity = WRAP_JAVA("ru.koshakmine.icstd.v1.block.blockentity.ticking.JsTickBlockEntity");
+let System: ITickingSystemBlockEntity = WRAP_JAVA("ru.koshakmine.icstd.v1.block.blockentity.ticking.JsTickingSystemBlockEntity")
     .getInstance();
-let Manager: IBlockEntityManager = WRAP_JAVA("ru.koshakmine.icstd.block.blockentity.BlockEntity").getManager();
+let Manager: IBlockEntityManager = WRAP_JAVA("ru.koshakmine.icstd.v1.block.blockentity.BlockEntity").getManager();
 
 TileEntity.createTileEntityForPrototype = function(Prototype: any, addToUpdate?: boolean): any {
     var tileEntity: any = {};
@@ -165,5 +165,5 @@ Saver.addSavesScope("_tiles", function read(data){
     return TileEntity["tileEntityList"];
 });
 
-WRAP_JAVA("ru.koshakmine.icstd.js.LiquidRegistry").init(LiquidRegistry);
-WRAP_JAVA("ru.koshakmine.icstd.js.TileEntity").init(TileEntity);
+WRAP_JAVA("ru.koshakmine.icstd.v1.utils.js.LiquidRegistry").init(LiquidRegistry);
+WRAP_JAVA("ru.koshakmine.icstd.v1.utils.js.TileEntity").init(TileEntity);

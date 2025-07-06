@@ -4,6 +4,6 @@
 	],
 	"library-dirs": [],
 	"boot-classes": [
-		"ru.koshakmine.icstd.ICSTD"
+		"ru.koshakmine.icstd.v1.item.component.ICSTD"
 	]
 }

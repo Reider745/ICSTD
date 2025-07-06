@@ -4,4 +4,4 @@ ConfigureMultiplayer({
 
 Launch();
 
-WRAP_JAVA("ru.koshakmine.icstd.modloader.Mod").runMods();
+WRAP_JAVA("ru.koshakmine.icstd.v1.utils.modloader.Mod").runMods();

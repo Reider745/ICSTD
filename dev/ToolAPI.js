@@ -1,4 +1,4 @@
-WRAP_JAVA("ru.koshakmine.icstd.js.ToolAPI").init({
+WRAP_JAVA("ru.koshakmine.icstd.v1.utils.js.ToolAPI").init({
 	addBlockMaterial(name, breakingMultiplier){
 		ToolAPI.addBlockMaterial(String(name), Number(breakingMultiplier));
 	},
